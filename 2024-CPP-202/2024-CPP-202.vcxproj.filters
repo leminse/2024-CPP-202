@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="call bycpp.cpp">
+    <ClCompile Include="배열과 포인트.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
