@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="포인트 기초.cpp">
+    <ClCompile Include="call bycpp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
