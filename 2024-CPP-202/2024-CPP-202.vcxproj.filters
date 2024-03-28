@@ -18,5 +18,8 @@
     <ClCompile Include="배열과 포인터.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="배열과 포인터 그리고 함수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
