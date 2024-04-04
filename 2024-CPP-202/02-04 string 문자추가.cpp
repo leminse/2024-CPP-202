@@ -1,12 +1,11 @@
 #include <iostream>
 #include <string>
-using namespace std;
 
 int main(void) {
-	string str = "c++";
+	char str[30] = "c";
 	//기존 문자열에다가 추가
-	str += "addition";
+	strcat(str, "addition");
 
-	cout << str;
+	printf("%s",str);
 
 }
