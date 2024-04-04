@@ -1,15 +1,14 @@
-#include <stdio.h>
-#include <string.h>
+#include <iostream>
+#include <string>
 
 int main(void) {
-	char str[30] = "develop hungry";
-	char str2[30];
+	std::string str = "develop hungry";
+	std::string str2;
+	
 
 	//str에 있는 내용을 str2에 복사
-	strcpy(str2, str);
+	str2 = str;
 
-	printf("%s", str2);
-
-
+	std::cout << str2;
 
 }
