@@ -35,16 +35,18 @@ private:
 
 int main(void) {
 	//동적할당 : 메모리는 heap에서 할당.	실행(런타임) 시 메모리 크기가 정해짐. heap는 많은 메모리를 만들 수 있으며, 많은 메모리 관리 가능
-	Student* jisu = new Student(2202, "나지수");
+	Student* denjle = new Student[3]{
+		{1010, "청 명"},
+		{215, "김독자"},
+		{320, "사쿠사 키요오미"}
+	};
 
-	//정적할당 : 메모리영역 stack에서 할당.	컴파일 시 메모리 크기가 정해짐. stack는 빠른 처리 단 한정적
-	Student swag = Student();
+	for (int i = 0; i < 3; i++)				
+		denjle[i].show();							//연산 자체에 *이 들어가기 때문에 .을 사용
 
-	jisu -> show();
-	swag.show();
 
 	//동적할당 해제 (무조건 해제 해 주어야함)
-	delete jisu;
+	delete []denjle;
 	
 	return 0;
 
