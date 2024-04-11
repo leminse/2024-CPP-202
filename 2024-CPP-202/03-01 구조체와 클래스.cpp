@@ -18,6 +18,12 @@ public:
 		hakbun_ = hakbun;
 		name_ = name;
 	}
+	
+	//클래스의 멤버를 출력
+	void show(void) {			//void는 메개변수
+		cout << hakbun_ << " ";
+		cout << name_ << endl;
+	}
 
 private:
 	int hakbun_;			//구글방식 (변수명_)   _을 붙임
@@ -28,6 +34,9 @@ private:
 int main(void) {
 	Student jisu = Student(2202, "나지수");
 	Student swag = Student();
+
+	jisu.show();
+	swag.show();
 	
 	return 0;
 
