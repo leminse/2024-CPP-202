@@ -38,7 +38,7 @@ int main(void) {
 	//정적할당 : 메모리영역 stack에서 할당.	컴파일 시 메모리 크기가 정해짐. stack는 빠른 처리 단 한정적
 	Student swag = Student();
 
-	(*jisu).show();
+	jisu -> show();
 	swag.show();
 
 	//동적할당 해제 (무조건 해제 해 주어야함)
