@@ -16,9 +16,9 @@ public:
 		name_ = "swah";
 	}
 
-	Student(int hakbun, string name) {
-		hakbun_ = hakbun;
-		name_ = name;
+	//멤버 변수 초기화 : const / 참조 멤버 변수를 초기화 할 수 있다.
+	Student(int hakbun, string name) : hakbun_(hakbun), name_(name) {			
+		
 	}
 	
 	//클래스의 멤버를 출력
