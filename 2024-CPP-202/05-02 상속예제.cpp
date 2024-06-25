@@ -18,6 +18,15 @@ public:
         cout << "for문" << g_for_ << endl;
     }
 
+    void dynamic_allocation_int() {
+        int* ptr = (int*)malloc(sizeof(int));
+        return ptr;                                         //c언어의 동적할당
+    }   
+
+    void free_dynamic_allocation_int(int* ptr) {
+        free(ptr);                                      //C언어 동적할당
+    }
+
 private:
     bool g_pointer_;
     bool g_structure_;
@@ -38,6 +47,15 @@ public:
         cout << "클래스" << g_class_ << endl;
         cout << "상속" << g_inheritance_ << endl;
         cout << "참조" << g_reference_ << endl;
+    }
+
+    int* dynamic_allocation_int() {
+        int* ptr = new int;
+        return ptr;
+    }
+
+    void free_dynamic_allocation_int(int* ptr) {
+        delete(ptr);                                    //C++언어 동적할당
     }
 
 private:
