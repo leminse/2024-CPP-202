@@ -8,15 +8,15 @@ public:
     Animal(string name, unsigned int age, int leg_num)
         : name_(name), age(age), leg_num_(leg_num) {}
 
-    void walk(void) { 
+    virtual void walk(void) {  // virtual Å°¿öµå Ãß°¡
         cout << "°È´Ù" << endl;
     }
 
-    void eat(void) {  
+    virtual void eat(void) {  // virtual Å°¿öµå Ãß°¡
         cout << "¸Ô´Ù" << endl;
     }
 
-    void bark(void) {  
+    virtual void bark(void) {  // virtual Å°¿öµå Ãß°¡
         cout << "¶Ù´Ù" << endl;
     }
 
@@ -38,15 +38,15 @@ public:
         cout << "±Í¿©¿ò" << endl;
     }
 
-    void bark() {
+    void bark() override {
         cout << "¾ß¿Ë¾ß¿Ë" << endl;
     }
 
-    void eat() {
+    void eat() override {
         cout << "¿ì¿Õ¿Õ" << endl;
     }
 
-    void walk() {
+    void walk() override {
         cout << "Á¶¿ëÁ¶¿ë" << endl;
     }
 
@@ -54,7 +54,7 @@ private:
     int cute_level;
 };
 
-int main(void) {  
+int main(void) { 
     Animal* animal = new Animal("°í¾çÀÌ", 5, 2);
     animal->bark();
     animal->eat();
@@ -67,5 +67,5 @@ int main(void) {
     animal->walk();
     delete animal;
 
-    return 0;  
+    return 0; 
 }
