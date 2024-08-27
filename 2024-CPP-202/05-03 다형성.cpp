@@ -8,6 +8,8 @@ public:
     Animal(string name, unsigned int age, int leg_num)
         : name_(name), age(age), leg_num_(leg_num) {}
 
+
+
     virtual void walk(void) {  // virtual 키워드 추가
         cout << "걷다" << endl;
     }
@@ -55,16 +57,9 @@ private:
 };
 
 int main(void) { 
-    Animal* animal = new Animal("고양이", 5, 2);
-    animal->bark();
-    animal->eat();
-    animal->walk();
-    delete animal;
 
-    animal = new Cat("루나", 6, 4, 100);
-    animal->bark();
-    animal->eat();
-    animal->walk();
+    Animal* animal = new Cat("루나", 6, 4, 100);
+ 
     delete animal;
 
     return 0; 
