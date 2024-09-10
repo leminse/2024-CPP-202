@@ -42,5 +42,11 @@
     <ClCompile Include="07-01 템플릿.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="다형성예제.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="08-01백터.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
