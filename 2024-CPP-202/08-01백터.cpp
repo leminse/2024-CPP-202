@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿ï»¿#include <iostream>
 #include <vector>
 
 using namespace std;
@@ -7,7 +7,10 @@ void main(void)
 {
 	vector<long long> v;
 
-	// º¤ÅÍ Ãß°¡
+	// ë¯¸ë¦¬ ê³µê°„ì„ ë§ì´ í™•ë³´í•˜ì. ì„±ëŠ¥ì„ ìœ„í•´
+	v.reserve(100);
+
+	// ë²¡í„° ì¶”ê°€
 	v.push_back(4);
 	v.push_back(6);
 	v.push_back(4567);
@@ -15,20 +18,20 @@ void main(void)
 	v.push_back(225);
 	v.push_back(4616164515);
 
-	// °ª Á¢±Ù
+	// ê°’ ì ‘ê·¼
 	cout << v[0] << endl;
 	cout << v.at(1) << endl;
 
-	// °ª ¼öÁ¤
+	// ê°’ ìˆ˜ì •
 	cout << v[5] << endl;
 	v[5] = 50000000000;
 	cout << v[5] << endl;
 
-	// Å©±â
+	// í¬ê¸°
 	for (int i = 0; i < v.size(); i++)
 		cout << v[i] << endl;
 
-	// ³¡ÀÇ °ª Á¦°Å
+	// ëì˜ ê°’ ì œê±°
 	v.pop_back();
 	v.pop_back();
 
