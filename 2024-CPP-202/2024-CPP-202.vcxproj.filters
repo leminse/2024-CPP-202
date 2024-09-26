@@ -48,5 +48,11 @@
     <ClCompile Include="08-01백터.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="08-02 맵.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="09-01 enum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
