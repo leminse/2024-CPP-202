@@ -13,7 +13,7 @@ void main(void) {
 	
 	//열거형을 사용하면 가독성도 좋아지고, 중간에 값을 유연하게 추가할 수 있다.
 
-	int style = KOREAN;
+	int style = FoodStyle::KOREAN;
 
 	switch (style) {
 		case KOREAN:
