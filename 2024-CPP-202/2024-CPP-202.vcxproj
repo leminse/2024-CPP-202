@@ -42,7 +42,10 @@
     <ClCompile Include="09-01 enum.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="09-02 범위기반 for문.cpp" />
+    <ClCompile Include="09-02 범위기반 for문.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="09-03 auto.cpp" />
     <ClCompile Include="SFML 예제.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
