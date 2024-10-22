@@ -3,11 +3,13 @@
 using namespace sf;
 using namespace std;
 
-#define WINDOW_WIDTH = 1200;
-#define WINDOW_HEIGHT = 700;
+enum App {
+	WIDTH = 1200,
+	HEIGHT = 700
+};
 
 void main(void) {
-	RenderWindow window(VideoMode(1200, 700), "shootingG");
+	RenderWindow window(VideoMode(App::WIDTH, App::HEIGHT), "shootingG");
 
 	while (window.isOpen()) {
 		Event event;
